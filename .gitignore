@@ -20,5 +20,15 @@ bin-release/
 # Node
 node_modules/
 
-# Datos locales de la app (usuarios, claves VAPID, emergencias)
-data/
+
+# Entornos y secretos
+.env
+.env.*
+!.env.example
+apps/web/.next/
+apps/mobile/.expo/
+apps/mobile/ios/
+apps/mobile/android/
+supabase/.temp/
+supabase/.branches/
+*.tsbuildinfo
