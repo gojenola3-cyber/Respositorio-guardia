@@ -1,0 +1,3 @@
+-- Datos de desarrollo local. Intencionadamente vacío: el primer usuario se
+-- registra desde la app o el panel y crea su organización (create_organization),
+-- con lo que queda como administrador. Ver README.md → "Primer arranque".

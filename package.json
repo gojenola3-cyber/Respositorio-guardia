@@ -1,0 +1,25 @@
+{
+  "name": "guardia",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Plataforma de gestión de guardias y activación de emergencias para equipos de voluntarios",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "test": "npm run test:unit && npm run test:db",
+    "test:unit": "node --test \"packages/core/test/*.test.ts\" \"supabase/functions/_shared/test/*.test.ts\"",
+    "test:db": "scripts/test-db.sh",
+    "typecheck": "tsc -p packages/core && tsc -p supabase/functions"
+  },
+  "devDependencies": {
+    "typescript": ">=5.8",
+    "@types/node": "^22.0.0"
+  },
+  "license": "SEE LICENSE IN LICENSE"
+}

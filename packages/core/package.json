@@ -1,0 +1,10 @@
+{
+  "name": "@guardia/core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Lógica de dominio compartida por la app móvil, el panel web y el servidor",
+  "exports": {
+    ".": "./src/index.ts"
+  }
+}
